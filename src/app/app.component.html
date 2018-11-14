@@ -7,7 +7,9 @@
 </div>
 <h2> View our selection Below </h2>
 <ul>
-  <li>{{ firstKeg }}</li>
+  <li class='name-price'>{{ firstKeg.name }} ${{ firstKeg.price }} </li>
+  <li class='abv-brand'> ABV: {{ firstKeg.alcoholContent}}% <em>{{ firstKeg.brand }} </em></li>
+  <li class='pints'>{{ firstKeg.pints }} pints remaining</li>
 </ul>
 
 <router-outlet></router-outlet>
