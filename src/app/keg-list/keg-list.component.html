@@ -1,0 +1,9 @@
+<ol>
+  <li [class]="expand(keg)" *ngFor="let keg of childKegList">
+    <h3 class='name-price'>{{ keg.name }} ${{ keg.price }} <button (click)="editButtonClicked(keg)">edit</button></h3>
+    <ul>
+      <li class='abv-brand'> ABV: {{ keg.alcoholContent}}% <em>{{ keg.brand }} </em></li>
+      <li class='pints'>{{ keg.pints }} pints remaining</li>
+    </ul><br>
+  </li>
+</ol>

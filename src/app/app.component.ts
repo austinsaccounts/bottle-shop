@@ -7,6 +7,9 @@ import { Keg } from './models/fresh-keg.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bottle-shop';
-  firstKeg: Keg = new Keg('Guinness Stout', 'Guinness', 6.5, 5);
+  masterKegList: Keg[] = [
+    new Keg('Guinness Stout', 'Guinness', 6.5, 5),
+    new Keg('Stella Artois', 'Stellar-brands', 6, 5.5),
+    new Keg('Uppin Cider', 'Life Brewing', 7, 4.5)
+  ];
 }

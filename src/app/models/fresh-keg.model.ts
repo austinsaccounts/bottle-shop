@@ -6,4 +6,3 @@ export class Keg {
     public price: number,
     public  alcoholContent: number) {}
 }
-

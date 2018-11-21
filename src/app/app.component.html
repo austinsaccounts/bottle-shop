@@ -1,15 +1,9 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!-- placeholder -->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-
+  <h1>Welcome to {{ title }}!</h1>
+  <h2> View our selection Below </h2>
 </div>
-<h2> View our selection Below </h2>
-<ul>
-  <li class='name-price'>{{ firstKeg.name }} ${{ firstKeg.price }} </li>
-  <li class='abv-brand'> ABV: {{ firstKeg.alcoholContent}}% <em>{{ firstKeg.brand }} </em></li>
-  <li class='pints'>{{ firstKeg.pints }} pints remaining</li>
-</ul>
+
+<app-keg-list [childKegList]="masterKegList" (clickSender)="editKeg($event)"></app-keg-list>
 
 <router-outlet></router-outlet>

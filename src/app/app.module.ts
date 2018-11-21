@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { KegListComponent } from './keg-list/keg-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    KegListComponent
   ],
   imports: [
     BrowserModule,

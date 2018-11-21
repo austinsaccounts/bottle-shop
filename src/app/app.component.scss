@@ -1,0 +1,23 @@
+ul li {
+    // padding-left: 10px;
+    color: black;
+}
+ul {
+    list-style: none;
+}
+ol {
+    list-style: none;
+}
+
+.name-price {
+    font-size: 1.2em;
+}
+.abv-brand {
+    font-size: .75;
+    font-style: italic;
+    font-weight: lighter;
+}
+.visible span{
+    color: red;
+    background-color: red;
+}
